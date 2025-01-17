@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #2563eb, #7c3aed);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .about-text {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            color: #4b5563;
+            max-width: 800px;
+        }
+
+        /* Portfolio Filter Buttons */
+        .portfolio-filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #e5e7eb;
+            color: #4b5563;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background-color: #d1d5db;
+        }
+
+        .filter-btn.active {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .portfolio-item-content {
+            padding: 1.5rem;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .portfolio-item p {
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-content p {
+                font-size: 1.25rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>John Doe</h1>
+            <p>Full-Stack Developer & Creative Designer</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm a passionate creator with over 5 years of experience in web development,
+                photography, and design. I love building beautiful, functional experiences
+                that solve real-world problems.
+            </p>
+        </section>
+
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="development">
+                    <i data-lucide="code"></i> Development
+                </button>
+                <button class="filter-btn" data-filter="photography">
+                    <i data-lucide="camera"></i> Photography
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i data-lucide="pencil"></i> Design
+                </button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be dynamically generated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 John Doe. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Contact</a>
+                <a href="#">Resume</a>
+                <a href="#">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Portfolio items data
+        const portfolioItems = [
+            {
+                title: "E-commerce Platform",
+                description: "Built a full-stack e-commerce platform using React and Node.js",
+                category: "development",
+                image: "/api/placeholder/400/300"
+            },
+            {
+                title: "Nature Photography Series",
+                description: "A collection of landscape and wildlife photographs from national parks",
+                category: "photography",
+                image: "/api/placeholder/400/300"
+            },
+            {
+                title: "Brand Identity Design",
+                description: "Created complete brand identity for tech startup including logo and guidelines",
+                category: "design",
+                image: "/api/placeholder/400/300"
+            },
+            {
+                title: "Task Management App",
+                description: "Developed a responsive task management application with real-time updates",
+                category: "development",
+                image: "/api/placeholder/400/300"
+            },
+            {
+                title: "Urban Photography",
+                description: "Street photography series capturing city life and architecture",
+                category: "photography",
+                image: "/api/placeholder/400/300"
+            },
+            {
+                title: "Mobile App UI Design",
+                description: "Created user interface designs for a fitness tracking mobile app",
+                category: "design",
+                image: "/api/placeholder/400/300"
+            }
+        ];
+
+        // Function to create portfolio items
+        function createPortfolioItem(item) {
+            return `
+                <div class="portfolio-item" data-category="${item.category}">
+                    <img src="${item.image}" alt="${item.title}">
+                    <div class="portfolio-item-content">
+                        <h3>${item.title}</h3>
+                        <p>${item.description}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to filter portfolio items
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize portfolio
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render portfolio items
+            const portfolioGrid = document.querySelector('.portfolio-grid');
+            portfolioGrid.innerHTML = portfolioItems.map(createPortfolioItem).join('');
+
+            // Add filter functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Filter items
+                    const category = button.dataset.filter;
+                    filterPortfolio(category);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
