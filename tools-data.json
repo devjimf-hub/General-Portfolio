@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Adobe Photoshop",
+        "icon": "https://img.icons8.com/fluency/48/photoshop.png",
+        "description": "For advanced photo editing, compositing, and creating digital graphics."
+    },
+    {
+        "name": "Adobe Premiere Pro",
+        "icon": "https://img.icons8.com/fluency/48/adobe-premiere-pro.png",
+        "description": "Used for professional video editing and post-production workflows."
+    },
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/fluency/48/canva.png",
+        "description": "For quick, creative social media graphics and presentations."
+    },
+    {
+        "name": "Capcut",
+        "icon": "https://img.icons8.com/fluency/48/cut.png",
+        "description": "To edit short-form videos efficiently for social media platforms."
+    },
+    {
+        "name": "VS Code",
+        "icon": "https://img.icons8.com/fluency/48/visual-studio-code-2019.png",
+        "description": "My main code editor for web and software development projects."
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/fluency/48/figma.png",
+        "description": "For UI/UX design, prototyping, and collaborative design work."
+    }
+]

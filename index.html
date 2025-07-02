@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jimf Bocales - Portfolio</title>
+    <link rel="icon" href="profile2.jpg" type="image/png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="portfolio.js"></script>
 </head>
 
 <body>
     <header>
+        <div class="floating-icons">
+            <i class="fi" data-lucide="brush">Photoshop</i>
+            <i class="fi" data-lucide="camera">Premiere Pro</i>
+            <i class="fi" data-lucide="code-2">Software Development</i>
+            <i class="fi" data-lucide="layout">Web Design</i>
+            <i class="fi" data-lucide="palette">Canva</i>
+            <i class="fi" data-lucide="scissors">Capcut</i>
+            <i class="fi" data-lucide="monitor">Coding</i>
+            <i class="fi" data-lucide="film">Video Editing</i>
+            <i class="fi" data-lucide="cloud">Cloud</i>
+            <i class="fi" data-lucide="user">Profile</i>
+        </div>
         <div class="header-content">
             <img src="profile2.jpg" alt="" srcset="" id="profile">
             <h1>Jimf Bocales</h1>
-            <p>Multimedia Artist & Creative Designer</p>
+            <p id="animated-role" class="matrix-text">Information Technologist</p>
             <div class="social-links">
                 <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
                 <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
@@ -33,27 +48,65 @@
         <section id="portfolio">
             <h2>My Work</h2>
             <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="development">
-                    <i data-lucide="code"></i> Development
-                </button>
-                <button class="filter-btn" data-filter="photography">
-                    <i data-lucide="camera"></i> Photography
-                </button>
-                <button class="filter-btn" data-filter="design">
-                    <i data-lucide="pencil"></i> Design
-                </button>
             </div>
 
             <div class="portfolio-grid">
                 <!-- Portfolio items will be dynamically generated here -->
             </div>
         </section>
+
+        <!-- My Tools Section -->
+        <section id="tools">
+            <h2>My Tools</h2>
+            <div class="tools-grid">
+                <!-- Tools will be dynamically generated here -->
+            </div>
+        </section>
+
+        <!-- Pitch Section -->
+        <section id="work-with-me" class="pitch-section">
+            <div class="pitch-flex">
+                <div class="pitch-text">
+                    <h2>Let's Work Together</h2>
+                    <p>
+                        With a strong foundation in multimedia, design, and technology, I approach every project with humility, 
+                        a willingness to listen, and the confidence to deliver results. If you’re looking for someone who values 
+                        collaboration, clear communication, and quality work, I would be honored to be part of your journey.
+                    </p>
+                    <div class="pitch-buttons">
+                        <a href="https://www.onlinejobs.ph/jobseekers/info/yourprofile" target="_blank" class="pitch-btn" title="OnlineJobs.ph">
+                            <i data-lucide="briefcase"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="pitch-btn" title="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourprofile" target="_blank" class="pitch-btn" title="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="pitch-image">
+                    <img src="workto.jpg" alt="Work With Me" />
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <div class="footer-floating-icons">
+            <i class="fi" data-lucide="star"></i>
+            <i class="fi" data-lucide="camera"></i>
+            <i class="fi" data-lucide="code"></i>
+            <i class="fi" data-lucide="music"></i>
+            <i class="fi" data-lucide="image"></i>
+            <i class="fi" data-lucide="pen-tool"></i>
+            <i class="fi" data-lucide="monitor"></i>
+            <i class="fi" data-lucide="film"></i>
+            <i class="fi" data-lucide="cloud"></i>
+            <i class="fi" data-lucide="user"></i>
+        </div>
         <div class="footer-content">
-            <p>&copy; 2025 John Doe. All rights reserved.</p>
+            <p>&copy; 2025 Jimf Bocales. All rights reserved.</p>
             <div class="footer-links">
                 <a href="#">Contact</a>
                 <a href="#">Resume</a>
@@ -62,95 +115,5 @@
         </div>
     </footer>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Portfolio items data
-        const portfolioItems = [
-            {
-                title: "E-commerce Platform",
-                description: "Built a full-stack e-commerce platform using React and Node.js",
-                category: "development",
-                image: "/api/placeholder/400/300"
-            },
-            {
-                title: "Nature Photography Series",
-                description: "A collection of landscape and wildlife photographs from national parks",
-                category: "photography",
-                image: "/api/placeholder/400/300"
-            },
-            {
-                title: "Brand Identity Design",
-                description: "Created complete brand identity for tech startup including logo and guidelines",
-                category: "design",
-                image: "/api/placeholder/400/300"
-            },
-            {
-                title: "Task Management App",
-                description: "Developed a responsive task management application with real-time updates",
-                category: "development",
-                image: "/api/placeholder/400/300"
-            },
-            {
-                title: "Urban Photography",
-                description: "Street photography series capturing city life and architecture",
-                category: "photography",
-                image: "/api/placeholder/400/300"
-            },
-            {
-                title: "Mobile App UI Design",
-                description: "Created user interface designs for a fitness tracking mobile app",
-                category: "design",
-                image: "/api/placeholder/400/300"
-            }
-        ];
-
-        // Function to create portfolio items
-        function createPortfolioItem(item) {
-            return `
-                <div class="portfolio-item" data-category="${item.category}">
-                    <img src="${item.image}" alt="${item.title}">
-                    <div class="portfolio-item-content">
-                        <h3>${item.title}</h3>
-                        <p>${item.description}</p>
-                    </div>
-                </div>
-            `;
-        }
-
-        // Function to filter portfolio items
-        function filterPortfolio(category) {
-            const items = document.querySelectorAll('.portfolio-item');
-            items.forEach(item => {
-                if (category === 'all' || item.dataset.category === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        // Initialize portfolio
-        document.addEventListener('DOMContentLoaded', () => {
-            // Render portfolio items
-            const portfolioGrid = document.querySelector('.portfolio-grid');
-            portfolioGrid.innerHTML = portfolioItems.map(createPortfolioItem).join('');
-
-            // Add filter functionality
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-
-                    // Filter items
-                    const category = button.dataset.filter;
-                    filterPortfolio(category);
-                });
-            });
-        });
-    </script>
 </body>
 </html>

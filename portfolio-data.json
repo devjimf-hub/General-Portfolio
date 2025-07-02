@@ -1,0 +1,50 @@
+[
+    {
+        "category": "development",
+        "title": "E-commerce Platform",
+        "description": "Built a full-stack e-commerce platform using React and Node.js",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "photography",
+        "title": "Nature Photography Series",
+        "description": "A collection of landscape and wildlife photographs from national parks",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "design",
+        "title": "Brand Identity Design",
+        "description": "Created complete brand identity for tech startup including logo and guidelines",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "development",
+        "title": "Task Management App",
+        "description": "Developed a responsive task management application with real-time updates",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "photography",
+        "title": "Urban Photography",
+        "description": "Street photography series capturing city life and architecture",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "design",
+        "title": "Mobile App UI Design",
+        "description": "Created user interface designs for a fitness tracking mobile app",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "video editing",
+        "title": "Mobile App UI Design",
+        "description": "Created user interface designs for a fitness tracking mobile app",
+        "image": "/api/placeholder/400/300"
+    },
+    {
+        "category": "reels",
+        "title": "Mobile App UI Design",
+        "description": "Created user interface designs for a fitness tracking mobile app",
+        "image": "/api/placeholder/400/300"
+    }
+]
