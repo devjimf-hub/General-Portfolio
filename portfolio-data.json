@@ -1,50 +1,44 @@
 [
     {
-        "category": "development",
-        "title": "E-commerce Platform",
-        "description": "Built a full-stack e-commerce platform using React and Node.js",
-        "image": "/api/placeholder/400/300"
-    },
-    {
-        "category": "photography",
-        "title": "Nature Photography Series",
+        "category": "photo editing",
+        "title": "Nature photo editing Series",
         "description": "A collection of landscape and wildlife photographs from national parks",
-        "image": "/api/placeholder/400/300"
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/nature-photo-editing"
     },
     {
         "category": "design",
         "title": "Brand Identity Design",
         "description": "Created complete brand identity for tech startup including logo and guidelines",
-        "image": "/api/placeholder/400/300"
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/brand-identity-design"
     },
     {
-        "category": "development",
-        "title": "Task Management App",
-        "description": "Developed a responsive task management application with real-time updates",
-        "image": "/api/placeholder/400/300"
-    },
-    {
-        "category": "photography",
-        "title": "Urban Photography",
-        "description": "Street photography series capturing city life and architecture",
-        "image": "/api/placeholder/400/300"
+        "category": "photo editing",
+        "title": "Urban photo editing",
+        "description": "Street photo editing series capturing city life and architecture",
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/urban-photo-editing"
     },
     {
         "category": "design",
         "title": "Mobile App UI Design",
         "description": "Created user interface designs for a fitness tracking mobile app",
-        "image": "/api/placeholder/400/300"
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/mobile-app-ui-design"
     },
     {
         "category": "video editing",
         "title": "Mobile App UI Design",
         "description": "Created user interface designs for a fitness tracking mobile app",
-        "image": "/api/placeholder/400/300"
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/video-editing"
     },
     {
         "category": "reels",
         "title": "Mobile App UI Design",
         "description": "Created user interface designs for a fitness tracking mobile app",
-        "image": "/api/placeholder/400/300"
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/reels"
     }
 ]

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jimf Bocales - Portfolio</title>
-    <link rel="icon" href="profile2.jpg" type="image/png">
+    <link rel="icon" href="pp.png" type="image/png" style="border-radius: 50%;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -26,9 +26,17 @@
             <i class="fi" data-lucide="user">Profile</i>
         </div>
         <div class="header-content">
-            <img src="profile2.jpg" alt="" srcset="" id="profile">
+            <div class="profile-verified-wrapper">
+                <img src="profile2.jpg" alt="" srcset="" id="profile">
+                <span class="profile-verified-badge">
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+                        <circle cx="19" cy="19" r="18" fill="#2563eb" stroke="#fff" stroke-width="3"/>
+                        <path d="M12 20.5l5 5 9-11" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </span>
+            </div>
             <h1>Jimf Bocales</h1>
-            <p id="animated-role" class="matrix-text">Information Technologist</p>
+            <p id="animated-role" class="matrix-text">Multimedia Artist</p>
             <div class="social-links">
                 <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
                 <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
@@ -38,14 +46,21 @@
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p class="about-text">
-            <strong>Hi welcome to this page!</strong> I am Jimf Bocales, a skilled multimedia editor and graphic designer with expertise in <strong> Adobe Photoshop, Premiere, After Effects, Audacity, Capcut, and Canva </strong>. I create visually compelling videos, graphics, and engaging content, blending creativity with technical precision. With a focus on modern design trends and accessibility, <strong>I deliver impactful visual solutions for educational and professional needs</strong>.
-            </p>
+        <section id="about" class="section-flyin">
+            <div class="about-flex">
+                <div class="about-text-content">
+                    <h2>About Me</h2>
+                    <p class="about-text">
+                        <strong>Hi welcome to this page!</strong> I am <strong style="color: #2563eb;">Jimf Bocales</strong>, a skilled multimedia editor and graphic designer with expertise in <strong  style="color: #2563eb;"> Adobe Photoshop, Premiere, After Effects, Audacity, Capcut, and Canva </strong>. I create visually compelling videos, graphics, and engaging content, blending creativity with technical precision. With a focus on modern design trends and accessibility, <strong >I deliver impactful visual solutions for educational and professional needs</strong>.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="hero.png" alt="Jimf Bocales" />
+                </div>
+            </div>
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" class="section-flyin">
             <h2>My Work</h2>
             <div class="portfolio-filters">
             </div>
@@ -56,7 +71,7 @@
         </section>
 
         <!-- My Tools Section -->
-        <section id="tools">
+        <section id="tools" class="section-flyin">
             <h2>My Tools</h2>
             <div class="tools-grid">
                 <!-- Tools will be dynamically generated here -->
@@ -64,7 +79,7 @@
         </section>
 
         <!-- Pitch Section -->
-        <section id="work-with-me" class="pitch-section">
+        <section id="work-with-me" class="section-flyin pitch-section">
             <div class="pitch-flex">
                 <div class="pitch-text">
                     <h2>Let's Work Together</h2>
@@ -115,5 +130,23 @@
         </div>
     </footer>
 
+    <script>
+document.querySelectorAll('.section-flyin').forEach(section => {
+    section.classList.remove('visible');
+});
+
+const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.section-flyin').forEach(section => {
+    observer.observe(section);
+});
+</script>
 </body>
 </html>

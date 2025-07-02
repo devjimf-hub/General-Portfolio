@@ -8,6 +8,7 @@ function createPortfolioItem(item) {
             <div class="portfolio-item-content">
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
+                <a href="${item.link}" class="portfolio-link-btn" target="_blank">View Project</a>
             </div>
         </div>
     `;
@@ -76,10 +77,6 @@ function capitalize(str) {
 // Helper to map category to icon name
 function getCategoryIcon(category) {
     switch (category.toLowerCase()) {
-        case 'development': return 'code';
-        case 'photography': return 'camera';
-        case 'design': return 'pencil';
-        case 'video editing': return 'film';
         default: return 'folder';
     }
 }
@@ -87,7 +84,9 @@ function getCategoryIcon(category) {
 // Matrix-like animated role changer
 const roles = [
     "Information Technologist",
-    "Web Developer / Designer",
+    "Video Editor",
+    "Graphic Designer / Photo Editor",
+    "Content Creator / Social Media Manager",
     "Multimedia Artist",
     "Virtual Assistant"
 ];
