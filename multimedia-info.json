@@ -1,0 +1,21 @@
+{
+    "about": {
+        "title": "Multimedia Artist",
+        "aboutText": "<strong>Hi welcome to this page!</strong> I am <strong style=\"color: #2563eb;\">Jimf Bocales</strong>, a skilled multimedia editor and graphic designer with expertise in <strong style=\"color: #2563eb;\">Adobe Photoshop, Premiere, After Effects, Audacity, Capcut, and Canva</strong>. I create visually compelling videos, graphics, and engaging content, blending creativity with technical precision."
+    },
+    "pitch": "With a strong foundation in multimedia, design, and technology, I approach every project with humility, a willingness to listen, and the confidence to deliver results. If you’re looking for someone who values collaboration, clear communication, and quality work, I would be honored to be part of your journey.",
+    "roles": [
+        "Multimedia Artist",
+        "Video Editor",
+        "Graphic Designer",
+        "Content Creator",
+        "Social Media Manager",
+        "Virtual Assistant",
+        "Creative Professional"
+    ],
+    "links": {
+        "contact": "mailto:your@email.com",
+        "resume": "https://yourwebsite.com/resume.pdf",
+        "privacy": "https://yourwebsite.com/privacy-policy"
+    }
+}

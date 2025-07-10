@@ -4,14 +4,16 @@
         "title": "Nature photo editing Series",
         "description": "A collection of landscape and wildlife photographs from national parks",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/nature-photo-editing"
+        "link": "https://yourwebsite.com/nature-photo-editing",
+        "isHighlight": 1
     },
     {
         "category": "design",
         "title": "Brand Identity Design",
         "description": "Created complete brand identity for tech startup including logo and guidelines",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/brand-identity-design"
+        "link": "https://yourwebsite.com/brand-identity-design",
+        "isHighlight": 1
     },
     {
         "category": "photo editing",
@@ -32,13 +34,15 @@
         "title": "Mobile App UI Design",
         "description": "Created user interface designs for a fitness tracking mobile app",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/video-editing"
+        "link": "https://yourwebsite.com/video-editing",
+        "isHighlight": 1
     },
     {
         "category": "reels",
         "title": "Mobile App UI Design",
         "description": "Created user interface designs for a fitness tracking mobile app",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/reels"
+        "link": "https://yourwebsite.com/reels",
+        "isHighlight": 1
     }
 ]

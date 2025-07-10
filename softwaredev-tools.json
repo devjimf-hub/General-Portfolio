@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Visual Studio Code",
+        "icon": "https://img.icons8.com/fluency/48/visual-studio-code-2019.png",
+        "description": "My main code editor for web and software development projects."
+    },
+    {
+        "name": "Git & GitHub",
+        "icon": "https://img.icons8.com/fluency/48/github.png",
+        "description": "Version control and collaboration for all my coding projects."
+    },
+    {
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/fluency/48/node-js.png",
+        "description": "JavaScript runtime for building scalable server-side applications."
+    },
+    {
+        "name": "React",
+        "icon": "https://img.icons8.com/fluency/48/react.png",
+        "description": "A JavaScript library for building user interfaces."
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/fluency/48/python.png",
+        "description": "For scripting, automation, and backend development."
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/fluency/48/figma.png",
+        "description": "For UI/UX design, prototyping, and collaborative design work."
+    }
+]

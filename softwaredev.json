@@ -1,0 +1,34 @@
+[
+    {
+        "category": "web development",
+        "title": "Personal Portfolio Website",
+        "description": "A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my projects and skills.",
+        "image": "profile.png",
+        "link": "https://yourwebsite.com/portfolio",
+        "isHighlight": 1
+    },
+    {
+        "category": "app development",
+        "title": "Task Manager App",
+        "description": "A productivity app for managing daily tasks, built with React and Node.js.",
+        "image": "profile2.jpg",
+        "link": "https://yourwebsite.com/task-manager",
+        "isHighlight": 1
+    },
+    {
+        "category": "automation",
+        "title": "Python Automation Scripts",
+        "description": "A collection of Python scripts to automate repetitive tasks and data processing.",
+        "image": "pp.png",
+        "link": "https://yourwebsite.com/python-automation",
+        "isHighlight": 1
+    },
+    {
+        "category": "open source",
+        "title": "Open Source Contributions",
+        "description": "Contributed to various open source projects on GitHub, focusing on bug fixes and feature enhancements.",
+        "image": "pp.png",
+        "link": "https://github.com/yourprofile",
+        "isHighlight": 1
+    }
+]

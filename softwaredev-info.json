@@ -1,0 +1,21 @@
+{
+    "about": {
+        "title": "Software Developer",
+        "aboutText": "<strong>Hi welcome to this page!</strong> I am <strong style=\"color: #2563eb;\">Jimf Bocales</strong>, a passionate software developer with expertise in <strong style=\"color: #2563eb;\">JavaScript, Python, VS Code, Git, and modern web frameworks</strong>. I build robust, scalable applications and deliver clean, maintainable code for diverse business needs."
+    },
+    "pitch": "With a strong foundation in software engineering and technology, I approach every project with a problem-solving mindset, a willingness to collaborate, and a drive for innovation. If you’re looking for someone who values clean code, teamwork, and delivering robust solutions, I would be honored to be part of your journey.",
+    "roles": [
+        "Software Developer",
+        "Web Developer",
+        "Full Stack Engineer",
+        "Frontend Developer",
+        "Backend Developer",
+        "App Developer",
+        "Tech Enthusiast"
+    ],
+    "links": {
+        "contact": "mailto:your@email.com",
+        "resume": "https://yourwebsite.com/resume.pdf",
+        "privacy": "https://yourwebsite.com/privacy-policy"
+    }
+}
