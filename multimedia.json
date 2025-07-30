@@ -1,48 +1,187 @@
 [
     {
-        "category": "photo editing",
-        "title": "Nature photo editing Series",
-        "description": "A collection of landscape and wildlife photographs from national parks",
+        "category": "video editing",
+        "title": "YouTube Video Editing",
+        "description": "Professional editing for YouTube creators including transitions, color grading, and audio sync.",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/nature-photo-editing",
+        "link": "showcase.html?pull=youtubevideos",
         "isHighlight": 1
-    },
-    {
-        "category": "design",
-        "title": "Brand Identity Design",
-        "description": "Created complete brand identity for tech startup including logo and guidelines",
-        "image": "pp.png",
-        "link": "https://yourwebsite.com/brand-identity-design",
-        "isHighlight": 1
-    },
-    {
-        "category": "photo editing",
-        "title": "Urban photo editing",
-        "description": "Street photo editing series capturing city life and architecture",
-        "image": "pp.png",
-        "link": "https://yourwebsite.com/urban-photo-editing"
-    },
-    {
-        "category": "design",
-        "title": "Mobile App UI Design",
-        "description": "Created user interface designs for a fitness tracking mobile app",
-        "image": "pp.png",
-        "link": "https://yourwebsite.com/mobile-app-ui-design"
     },
     {
         "category": "video editing",
-        "title": "Mobile App UI Design",
-        "description": "Created user interface designs for a fitness tracking mobile app",
+        "title": "Social Media Reels & Shorts",
+        "description": "Eye-catching short-form video editing for Instagram Reels, TikTok, and YouTube Shorts.",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/video-editing",
+        "link": "showcase.html?pull=social-media-reels",
         "isHighlight": 1
     },
     {
-        "category": "reels",
-        "title": "Mobile App UI Design",
-        "description": "Created user interface designs for a fitness tracking mobile app",
+        "category": "photo editing",
+        "title": "Portrait Retouching",
+        "description": "High-quality retouching for portraits, fashion, and lifestyle photography.",
         "image": "pp.png",
-        "link": "https://yourwebsite.com/reels",
+        "link": "showcase.html?pull=portrait-retouching"
+    },
+    {
+        "category": "photo editing",
+        "title": "Product Photo Enhancement",
+        "description": "Optimized photo editing for e-commerce product listings, enhancing clarity and appeal.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=product-photo-enhancement"
+    },
+    {
+        "category": "video editing",
+        "title": "Corporate & Event Videos",
+        "description": "Editing for business events, webinars, and promotional corporate videos.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=corporate-event-videos",
         "isHighlight": 1
+    },
+    {
+        "category": "photo editing",
+        "title": "Real Estate Photo Editing",
+        "description": "Professional editing for real estate images including HDR blending and sky replacement.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=real-estate-photo-editing",
+        "isHighlight": 1
+    },
+    {
+        "category": "video editing",
+        "title": "TikTok Trend Editing",
+        "description": "Fast, trendy edits optimized for TikTok viral content with effects and transitions.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=tiktok-trend-editing",
+        "isHighlight": 1
+    },
+    {
+        "category": "video editing",
+        "title": "Music Video Editing",
+        "description": "Dynamic editing for music videos including beat-sync, effects, and color grading.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=music-video-editing"
+    },
+    {
+        "category": "photo editing",
+        "title": "Food Photography Editing",
+        "description": "Enhance food images for restaurants, cafes, and delivery apps with vibrant edits.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=food-photography-editing"
+    },
+    {
+        "category": "photo editing",
+        "title": "Wedding Photo Editing",
+        "description": "Romantic and cinematic edits for wedding albums and pre-wedding shoots.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=wedding-photo-editing",
+        "isHighlight": 1
+    },
+    {
+        "category": "video editing",
+        "title": "Wedding Video Editing",
+        "description": "Cinematic storytelling edits for weddings and pre-wedding highlights.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=wedding-video-editing",
+        "isHighlight": 1
+    },
+    {
+        "category": "photo editing",
+        "title": "Fashion Lookbook Editing",
+        "description": "Professional retouching for fashion brands, catalogs, and social media campaigns.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=fashion-lookbook-editing"
+    },
+    {
+        "category": "video editing",
+        "title": "Commercial Ads Editing",
+        "description": "High-impact ad editing for social media and online campaigns.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=commercial-ads-editing",
+        "isHighlight": 1
+    },
+    {
+        "category": "photo editing",
+        "title": "Creative Composite Editing",
+        "description": "Advanced Photoshop compositing for surreal and artistic visuals.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=creative-composite-editing"
+    },
+    {
+        "category": "video editing",
+        "title": "Explainer Video Editing",
+        "description": "Professional editing for educational and marketing explainer videos.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=explainer-video-editing"
+    },
+    {
+        "category": "photo editing",
+        "title": "Lifestyle Instagram Editing",
+        "description": "Aesthetic photo editing for influencers and lifestyle social media feeds.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=lifestyle-instagram-editing"
+    },
+    {
+        "category": "video editing",
+        "title": "Vlog Editing",
+        "description": "Engaging vlog editing for travel, lifestyle, and personal content creators.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=vlog-editing"
+    },
+    {
+        "category": "photo editing",
+        "title": "Drone Photo Editing",
+        "description": "Stunning aerial image enhancement for travel, real estate, and landscapes.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=drone-photo-editing"
+    },
+    {
+        "category": "video editing",
+        "title": "Drone Video Editing",
+        "description": "Smooth and cinematic editing for drone footage including stabilization and color grading.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=drone-video-editing"
+    },
+    {
+        "category": "photo editing",
+        "title": "Automotive Photo Editing",
+        "description": "Polished car and vehicle images for dealerships and automotive campaigns.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=automotive-photo-editing"
+    },
+    {
+        "category": "brand editing",
+        "title": "Logo Animation",
+        "description": "Dynamic logo animations for brand intros, YouTube videos, and presentations.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=logo-animation",
+        "isHighlight": 1
+    },
+    {
+        "category": "brand editing",
+        "title": "Logo Editing & Refresh",
+        "description": "Revamping and enhancing existing logos for a fresh and modern look.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=logo-editing"
+    },
+    {
+        "category": "design",
+        "title": "Book Layout Design",
+        "description": "Professional page layout for eBooks, printed books, and magazines.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=book-layout-design"
+    },
+    {
+        "category": "design",
+        "title": "Book Cover Design",
+        "description": "Eye-catching book cover designs for digital and print publications.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=book-cover-design",
+        "isHighlight": 1
+    },
+    {
+        "category": "brand editing",
+        "title": "Brand Motion Graphics",
+        "description": "Animated branding elements like lower-thirds, transitions, and intro/outro sequences.",
+        "image": "pp.png",
+        "link": "showcase.html?pull=brand-motion-graphics"
     }
 ]

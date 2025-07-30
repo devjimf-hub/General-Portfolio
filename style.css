@@ -623,4 +623,34 @@ footer::before {
     }
 }
 
+/* Responsive video showcase layout */
+.video-item-responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+.video-frame {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+.video-desc {
+    flex: 1 1 40%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 700px) {
+    .video-item-responsive {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .video-frame, .video-desc {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
 

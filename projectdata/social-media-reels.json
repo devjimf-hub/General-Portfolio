@@ -1,0 +1,12 @@
+﻿[
+  {
+    "youtubeId": "KnYdKj458ds",
+    "title": "Sample Video",
+    "description": "This is a sample YouTube video embedded in the showcase."
+  },
+  {
+    "image": "profile.png",
+    "title": "Sample Image",
+    "description": "This is a sample image displayed in the showcase."
+  }
+]

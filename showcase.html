@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f8fa;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        main {
+            padding: 2em 1em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #showcase-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2em;
+        }
+        .video-item-responsive {
+            background: #fff;
+            border-radius: 1em;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+        .video-item-responsive:hover {
+            transform: translateY(-4px) scale(1.02);
+        }
+        .video-frame {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .video-frame iframe, .video-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+            border-radius: 0.5em;
+        }
+        .video-desc {
+            padding: 1em;
+        }
+        .video-desc h3 {
+            margin: 0 0 0.5em 0;
+            font-size: 1.2em;
+            color: #1a2a3a;
+        }
+        .video-desc p {
+            margin: 0;
+            color: #444;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.2em;
+                padding: 1em 0;
+            }
+            main {
+                padding: 1em 0.5em;
+            }
+            #showcase-content {
+                gap: 1em;
+            }
+            .video-desc {
+                padding: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="showcase-title">Project Showcase</h1>
+    </header>
+    <main>
+        <div id="showcase-content">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </main>
+    <script>
+    // Helper to get query parameter
+    function getQueryParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+    }
+
+    // Main logic
+    document.addEventListener('DOMContentLoaded', () => {
+        const pull = getQueryParam('pull');
+        const showcaseContent = document.getElementById('showcase-content');
+        const showcaseTitle = document.getElementById('showcase-title');
+
+        if (!pull) {
+            showcaseContent.innerHTML = '<p>No project selected.</p>';
+            return;
+        }
+
+        fetch('projectdata/' + pull + '.json')
+            .then(res => res.json())
+            .then(data => {
+                if (Array.isArray(data)) {
+                    // Format title nicely
+                    showcaseTitle.textContent = pull
+                        .replace(/[-_]/g, ' ')
+                        .replace(/([A-Z])/g, ' $1')
+                        .replace(/^./, str => str.toUpperCase());
+
+                    const items = data.map(item => {
+                        // YouTube Video
+                        if (item.youtubeId) {
+                            return `
+                                <div class="video-item-responsive">
+                                    <div class="video-frame">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/${item.youtubeId}" 
+                                            title="${item.title || 'YouTube Video'}"
+                                            allowfullscreen
+                                            loading="lazy"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        ></iframe>
+                                    </div>
+                                    <div class="video-desc">
+                                        <h3>${item.title || ''}</h3>
+                                        <p>${item.description || ''}</p>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        // Image/Logo
+                        if (item.image || item.logo) {
+                            return `
+                                <div class="video-item-responsive">
+                                    <div class="video-frame">
+                                        <img 
+                                            src="${item.image || item.logo}" 
+                                            alt="${item.title || 'Image'}"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="video-desc">
+                                        <h3>${item.title || ''}</h3>
+                                        <p>${item.description || ''}</p>
+                                    </div>
+                                </div>
+                            `;
+                        }
+                        // Fallback: text only
+                        return `
+                            <div class="video-item-responsive">
+                                <div class="video-desc" style="width:100%;">
+                                    <h3>${item.title || ''}</h3>
+                                    <p>${item.description || ''}</p>
+                                </div>
+                            </div>
+                        `;
+                    }).join('');
+                    showcaseContent.innerHTML = items;
+                } else {
+                    // Fallback: Show JSON as formatted text
+                    showcaseContent.innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+                }
+            })
+            .catch(() => {
+                showcaseContent.innerHTML = '<p>Could not load project data.</p>';
+            });
+    });
+    </script>
+</body>
+</html>

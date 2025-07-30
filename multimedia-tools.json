@@ -2,31 +2,81 @@
     {
         "name": "Adobe Photoshop",
         "icon": "https://img.icons8.com/fluency/48/photoshop.png",
-        "description": "For advanced photo editing, compositing, and creating digital graphics."
+        "description": "Advanced photo editing, retouching, and creative compositing for professional visuals."
     },
     {
         "name": "Adobe Premiere Pro",
         "icon": "https://img.icons8.com/fluency/48/adobe-premiere-pro.png",
-        "description": "Used for professional video editing and post-production workflows."
+        "description": "Professional video editing for YouTube, social media, weddings, and commercial projects."
+    },
+    {
+        "name": "Adobe After Effects",
+        "icon": "https://img.icons8.com/fluency/48/adobe-after-effects.png",
+        "description": "Motion graphics, logo animation, and visual effects for videos and branding."
+    },
+    {
+        "name": "CapCut",
+        "icon": "https://img.icons8.com/fluency/48/cut.png",
+        "description": "Quick and efficient short-form video editing for Reels, TikTok, and YouTube Shorts."
     },
     {
         "name": "Canva",
         "icon": "https://img.icons8.com/fluency/48/canva.png",
-        "description": "For quick, creative social media graphics and presentations."
-    },
-    {
-        "name": "Capcut",
-        "icon": "https://img.icons8.com/fluency/48/cut.png",
-        "description": "To edit short-form videos efficiently for social media platforms."
-    },
-    {
-        "name": "VS Code",
-        "icon": "https://img.icons8.com/fluency/48/visual-studio-code-2019.png",
-        "description": "My main code editor for web and software development projects."
+        "description": "Create social media graphics, book covers, and marketing materials with ease."
     },
     {
         "name": "Figma",
         "icon": "https://img.icons8.com/fluency/48/figma.png",
-        "description": "For UI/UX design, prototyping, and collaborative design work."
-    }
+        "description": "Collaborative design and prototyping for layouts, UI, and brand assets."
+    },
+    {
+        "name": "Audacity",
+        "icon": "https://img.icons8.com/fluency/48/microphone.png",
+        "description": "Audio editing and voiceover enhancement for videos and podcasts."
+    },
+    {
+        "name": "Slack",
+        "icon": "https://img.icons8.com/fluency/48/slack.png",
+        "description": "Team communication and collaboration with clients and freelancers."
+    },
+    {
+        "name": "Trello",
+        "icon": "https://img.icons8.com/fluency/48/trello.png",
+        "description": "Project management and task tracking for freelance workflows."
+    },
+    {
+        "name": "Notion",
+        "icon": "https://img.icons8.com/fluency/48/notion.png",
+        "description": "Organize projects, manage content calendars, and track client work."
+    },
+    {
+        "name": "Zoom",
+        "icon": "https://img.icons8.com/fluency/48/zoom.png",
+        "description": "Client meetings, online consultations, and remote collaboration."
+    },
+    {
+        "name": "Google Drive",
+        "icon": "https://img.icons8.com/fluency/48/google-drive--v2.png",
+        "description": "Cloud storage and file sharing for project delivery and collaboration."
+    },
+    {
+        "name": "Dropbox",
+        "icon": "https://img.icons8.com/fluency/48/dropbox.png",
+        "description": "File storage and sharing for large multimedia projects."
+    },
+    {
+        "name": "Adobe Lightroom",
+        "icon": "https://img.icons8.com/fluency/48/adobe-lightroom.png",
+        "description": "Photo editing and organization for photographers and creatives."
+    },
+    {
+        "name": "Final Cut Pro",
+        "icon": "https://img.icons8.com/fluency/48/final-cut-pro.png",
+        "description": "Professional video editing software for Mac users."
+    },
+    {
+        "name": "DaVinci Resolve",
+        "icon": "https://img.icons8.com/fluency/48/davinci-resolve.png",
+        "description": "Comprehensive video editing, color correction, and audio post-production."
+    } 
 ]
